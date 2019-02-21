@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>上海停车场运营监控中心</title>
+	<link rel="stylesheet" href="css/u-reset.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div id="header">
+		<div class="header-left">
+			<img src="images/logo.png" alt="" class="logo">
+			<span>停车场运营监控中心</span>
+		</div>
+		<div class="header-right">
+			<div class="time">19:00</div>
+			<div class="date">2018年5月1日</div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 内容部分开始 -->
+	<div id="content">
+		<div class="content-left">
+			<!-- 今日收入 -->
+			<div class="today-income">
+				<div class="title">今日收入 / 元</div>
+				<div class="money">
+					<div class="money-left">0</div>
+					<div class="money-right">
+						<span>同比昨日(%)</span>
+						<span><img src="images/up.png"></span>
+						<span class="ratio">0%</span>
+					</div>
+				</div>
+			</div>
+			<!-- 停车时长 -->
+			<div class="stop-lenth">
+				<h2>当前停车时长</h2>
+				<div class="pip"></div>
+			</div>
+			<!-- 设备警告 -->
+			<div class="device-warning">
+				<h2>设备警告</h2>
+				<div class="device-list">
+					<ul class="device-list-box">
+						<li class="device-item error">
+							<div class="top">
+								<div class="person">
+									<span>未处理</span>
+									<span>巡逻人员：李白</span>
+								</div>
+								<div class="time">19:00</div>
+							</div>
+							<div class="info">
+								<div class="pos">绿地世纪城</div>
+								<div class="error">入口门坏了</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<div class="content-center">
+			<div class="map"></div>
+			<div class="stop-photo">
+				<ul class="stop-box"><li></li></ul>
+			</div>
+		</div>
+		<div class="content-right">
+			<!-- 停车位 -->
+			<div class="stop-number">
+				<div class="stop-col">
+					<div class="stop-col-inner">
+						<div>0</div>
+						<div>开放泊车位</div>
+					</div>
+				</div>
+				<div class="stop-col">
+					<div class="stop-col-inner">
+						<div>0</div>
+						<div>占用泊位</div>
+					</div>
+				</div>
+				<div class="stop-col">
+					<div class="stop-col-inner">
+						<div>0</div>
+						<div>泊位利用率</div>
+					</div>
+				</div>
+			</div>
+			<div class="stop-top">
+				<h2>停车收费排行</h2>
+				<div class="stop-top-box">
+					<div class="stop-pay-type"></div>
+					<div class="stop-pay-time"></div>
+				</div>
+			</div>	
+			<div class="yestday-info">
+				<h2>昨日运营情况</h2>
+				<div class="info-list">
+					<ul class="info-list-box">
+						<li>
+							<h3>郑州市-千玺广场</h3>
+							<div>
+								<span class="left">进出车辆<i>7343</i></span>
+								<span class="right">总收入 <i>￥3432345.00</i></span>
+							</div>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/china.js"></script>
+<script src="js/index.js"></script>
+</html>
